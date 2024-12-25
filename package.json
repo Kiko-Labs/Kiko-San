@@ -6,7 +6,10 @@
   "type": "commonjs",
   "scripts": {
     "up": "pnpm install && pnpm update",
-    "start": "clear && node ./src/index.js"
+    "start": "clear && pnpm run lint && pnpm run format && clear && node ./src/index.js",
+    "lint": "eslint --fix '**/*.{js,mjs,cjs,ts}'",
+    "format": "prettier --write '**/*.{js,mjs,cjs,ts,json,css,html}'",
+    "lint-and-format": "pnpm run lint && pnpm run format"
   },
   "repository": {
     "type": "git",
@@ -28,13 +31,17 @@
     "@tryforge/forge.db": "^2.0.7",
     "@tryforge/forgescript": "github:tryforge/forgescript#dev",
     "chalk": "^4.1.2",
-    "dotenv": "^16.4.7",
     "figlet": "^1.8.0",
-    "globals": "^15.14.0",
     "path": "^0.12.7",
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {
-    "prettier": "^3.4.2"
+    "@eslint/js": "^9.17.0",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.17.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2",
+    "typescript-eslint": "^8.18.2"
   }
 }
