@@ -9,7 +9,8 @@
     "start": "clear && pnpm run lint && pnpm run format && clear && node ./src/index.js",
     "lint": "eslint --fix '**/*.{js,mjs,cjs,ts}'",
     "format": "prettier --write '**/*.{js,mjs,cjs,ts,json,css,html}'",
-    "lint-and-format": "pnpm run lint && pnpm run format"
+    "lint-and-format": "pnpm run lint && pnpm run format",
+    "stable-release": "git checkout stable && git merge dev && git checkout dev"
   },
   "repository": {
     "type": "git",
