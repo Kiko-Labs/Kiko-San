@@ -26,7 +26,7 @@ We are open to contributions! If you have ideas, fixes, or new features to propo
 
 ## License
 
-Kiko San is licensed under the **MIT License**. See [LICENSE](LICENSE) for more information.
+Kiko San is licensed under the **BSD 4 License**. See [LICENSE](LICENSE) for more information.
 
 ---
 
