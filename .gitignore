@@ -4,3 +4,4 @@ node_modules
 forge.db
 package-lock.json
 .idx
+pnpm-lock.yaml

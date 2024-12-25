@@ -1,7 +1,8 @@
 // src/handlers/database.js
 
 const variables = {
-  tpk: process.env.TENOR_API_KEY
+  //==========ROLEPLAY==============
+  hit: "0",
 };
 
-module.exports = variables;  // Export the variables object
+module.exports = variables; // Export the variables object
