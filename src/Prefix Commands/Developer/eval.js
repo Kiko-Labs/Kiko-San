@@ -11,6 +11,7 @@ module.exports = {
             $description[Give me the code bro... don't be shy]
             $footer[smh]
         ]
+        Ping: \`$pingMS\` | Uptime: <t:$round[$math[$math[$getTimestamp-$uptime]/1000];0]:R>
         $eval[$message]
-        **__Ping:__**$parseMs[$ping] **__Uptime:__**$parseMs[$uptime] `,
+    `,
 };

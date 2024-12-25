@@ -1,6 +1,7 @@
 module.exports = {
   code: `
         $onlyForBotOwner[true]
+        Ping: \`$pingMS\` | Uptime: <t:$round[$math[$math[$getTimestamp-$uptime]/1000];0]:R>
         $eval[$option[code]]`,
   data: {
     name: "eval",
