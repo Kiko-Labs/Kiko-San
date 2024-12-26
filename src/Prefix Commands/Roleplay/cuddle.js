@@ -3,6 +3,7 @@ module.exports = {
   description: "sends a gif of you cuddling someone",
   usage: "cuddle [user]",
   category: "Roleplay",
+  source: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/cuddle.js",
   type: "messageCreate",
   code: `
         $start
@@ -33,7 +34,7 @@ module.exports = {
             $footer[Cuddle mode: Activated]
           ]
           $else[
-            $title[$username[$authorID] Is Cuddling $user[Username;$mesage[0]]]
+            $title[$username[$authorID] Is Cuddling $user[Username;$message[0]]]
             $image[https://purrbot.site/img/sfw/cuddle/gif/cuddle_$get[num].gif]
             $footer[Everyone deserves a good cuddle!]
           ]
