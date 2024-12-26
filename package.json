@@ -10,8 +10,8 @@
     "lint": "eslint --fix '**/*.{js,mjs,cjs,ts}'",
     "format": "prettier --write '**/*.{js,mjs,cjs,ts,json,css,html}'",
     "lint-and-format": "pnpm run lint && pnpm run format",
-    "stable-release": "git checkout stable && git push origin stable --force && git checkout dev"
-  },
+    "stable-release": "git switch stable && git push origin stable --force && git switch dev"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Zack-911/Atomic.git"
