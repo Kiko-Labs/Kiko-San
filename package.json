@@ -1,6 +1,6 @@
 {
   "name": "kikosan",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A starting template for forgescript",
   "main": ".src/index.js",
   "type": "commonjs",
