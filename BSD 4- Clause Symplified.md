@@ -1,6 +1,6 @@
 # BSD 4-Clause License (Simplified)
 
-This project is licensed under the [BSD 4-Clause License](../LICENSE). Below is a simplified explanation of what you can and cannot do:
+This project is licensed under the [BSD 4-Clause License](../License). Below is a simplified explanation of what you can and cannot do:
 
 ## You Can
 
@@ -12,7 +12,7 @@ This project is licensed under the [BSD 4-Clause License](../LICENSE). Below is 
 - Include the following attribution in your project:
 
   > "This product includes software developed by Zack-911."
-  
+
   - This can be placed in any of the following locations:
     - An "About" command
     - A "Developers" command
@@ -27,10 +27,10 @@ This project is licensed under the [BSD 4-Clause License](../LICENSE). Below is 
 
 ## Important Disclaimer
 
-- [Zack-911] and its [contributors] are **NOT required** to provide support for your project under any circumstances. This includes but is not limited to:
+- **Zack-911** and its **contributors** are **NOT required** to provide support for your project under any circumstances. This includes but is not limited to:
   - **Errors** in your implementation of this software.
   - **Security** risks introduced by your modifications.
   - **Data breaches** resulting from your use of the software.
 
-[LynnuxDev]: https://github.com/Zack-911
-[Contact]: https://zack-911.vercel.app/
+My Github Profile [Zack-911](https://github.com/Zack-911) And Find My Contact Info At
+[Contact](https://zack-911.vercel.app/)
