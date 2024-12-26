@@ -10,7 +10,7 @@
     "lint": "eslint --fix '**/*.{js,mjs,cjs,ts}'",
     "format": "prettier --write '**/*.{js,mjs,cjs,ts,json,css,html}'",
     "lint-and-format": "pnpm run lint && pnpm run format",
-    "stable-release": "git checkout stable && git merge dev && git checkout dev"
+    "stable-release": "git checkout stable && git push origin stable --force && git checkout dev"
   },
   "repository": {
     "type": "git",
