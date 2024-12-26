@@ -1,13 +1,13 @@
 module.exports = {
-  name: "angry",
-  description: "show that you are angry at someone using a gif",
-  usage: "angry <user>",
+  name: "lick",
+  description: "show that you are licking someone using a gif",
+  usage: "lick <user>",
   type: "messageCreate",
   code: `
         $start
         $c[================= LIMITER START =================]
 
-        $onlyIf[$httpRequest[https://purrbot.site/api/list/sfw/angry/gif;GET]==200;
+        $onlyIf[$httpRequest[https://purrbot.site/api/list/sfw/lick/gif;GET]==200;
           $title[Error]
           $description[The api that kiko san uses to get these gifs has either failed or is down.
             We apologize for this inconvenience. Kindly report this to the discord server so that we can work on getting it up as soon as possible!
@@ -18,7 +18,7 @@ module.exports = {
 
         $onlyIf[$message[0]!=;
           $title[No User Provided]
-          $description[Incorrect Usage. Correct Usage Is: hit <user>]
+          $description[Incorrect Usage. Correct Usage Is: lick <user>]
           $footer[Senpai didn't expect this from you]
         ]
 
@@ -37,8 +37,8 @@ module.exports = {
             ]
             $else[$let[num;0$get[num]]]
         ]
-        $title[$username[$authorID] Is Angry At $user[Username;$message[0]]]
-        $image[https://purrbot.site/img/sfw/slap/gif/slap_$get[num].gif]
-        $footer[Don't worry they didn't sustain any injuries :3]
+        $title[$username[$authorID] Is Licking $user[Username;$message[0]]]
+        $image[https://purrbot.site/img/sfw/lick/gif/lick_$get[num].gif]
+        $footer[A little lick... and a whole lot of mischief]
     `,
 };
