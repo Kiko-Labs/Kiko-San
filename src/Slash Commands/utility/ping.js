@@ -1,9 +1,9 @@
 module.exports = {
-    code: `
+  code: `
       Ping: \`$pingMS\` | Uptime: <t:$round[$math[$math[$getTimestamp-$uptime]/1000];0]:R>
     `,
-    data: {
-      name: "ping",
-      description: "get the bots ping and uptime"
-    }
+  data: {
+    name: "ping",
+    description: "get the bots ping and uptime",
+  },
 };

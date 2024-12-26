@@ -2,6 +2,7 @@ module.exports = {
   name: "poke",
   description: "show that you are poking someone using a gif",
   usage: "poke <user>",
+  category: "Roleplay",
   type: "messageCreate",
   code: `
         $start

@@ -2,6 +2,7 @@ module.exports = {
   name: "dance",
   description: "shows a gif of you dancing",
   usage: "dance",
+  category: "Roleplay",
   type: "messageCreate",
   code: `
         $start

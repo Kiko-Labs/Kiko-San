@@ -3,6 +3,7 @@ module.exports = {
   aliases: ["sad"],
   description: "show that you crying using a gif",
   usage: "cry",
+  category: "Roleplay",
   type: "messageCreate",
   code: `
         $start

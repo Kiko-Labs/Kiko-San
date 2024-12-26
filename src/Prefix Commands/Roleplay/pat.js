@@ -2,6 +2,7 @@ module.exports = {
   name: "pat",
   description: "show that you are patting someone using a gif",
   usage: "pat <user>",
+  category: "Roleplay",
   type: "messageCreate",
   code: `
         $start

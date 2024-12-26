@@ -2,6 +2,7 @@ module.exports = {
   name: "tickle",
   description: "show that you are tickling someone using a gif",
   usage: "tickle <user>",
+  category: "Roleplay",
   type: "messageCreate",
   code: `
         $start

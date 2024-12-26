@@ -2,6 +2,8 @@ module.exports = {
   name: "angry",
   description: "show that you are angry at someone using a gif",
   usage: "angry [user]",
+  category: "Roleplay",
+  source: "",
   type: "messageCreate",
   code: `
         $start
