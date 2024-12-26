@@ -2,6 +2,7 @@ module.exports = {
   name: "slap",
   description: "Returns a gif of anime people slapping each other",
   usage: "slap <user>",
+  category: "Roleplay",
   type: "messageCreate",
   code: `
     $start
