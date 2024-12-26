@@ -5,6 +5,7 @@ module.exports = [
     code: `
     $onlyIf[$or[$env[type]==ID;$env[type]==Username];
       $start
+      
       $description[$env[type] in not a valid type.
         Instead specify what you want.
         ID or Username
@@ -13,14 +14,15 @@ module.exports = [
     ]
     $onlyIf[$env[user]!=;
       $start
+      $title[**Custom Function Error**]
       $description[
-        $env[user] in not a valid user. Instead specify what you want.
-        ID or Username
+        The User Parameter Cannot Be Left Empty!
       ]
       $footer[Be Better Smh]
     ]
     $onlyIf[$findUser[$env[user]]!=;
       $start
+      $title[**Invalid User**]
       $description[$env[user] in not a valid user.]
       $footer[Be Better Smh]
     ]
