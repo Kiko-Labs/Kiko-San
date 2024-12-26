@@ -3,6 +3,7 @@ module.exports = {
   description: "bite someone using a gif",
   usage: "bite <user>",
   category: "Roleplay",
+  source: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/bite.js",
   type: "messageCreate",
   code: `
         $start
