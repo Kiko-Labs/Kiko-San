@@ -1,7 +1,7 @@
 module.exports = {
   name: "angry",
   description: "show that you are angry at someone using a gif",
-  usage: "angry <user>",
+  usage: "angry [user]",
   type: "messageCreate",
   code: `
         $start
@@ -16,18 +16,6 @@ module.exports = {
           $footer[Sowwy senpai]
         ]
 
-        $onlyIf[$message[0]!=;
-          $title[No User Provided]
-          $description[Incorrect Usage. Correct Usage Is: hit <user>]
-          $footer[Senpai didn't expect this from you]
-        ]
-
-        $onlyIf[$userExists[$user[ID;$message[0]]]==true;
-          $title[Invalid User Provided]
-          $description[The user you provided does not exist]
-          $footer[Senpai.I didn't expect this from you]
-        ]
-
         $c[================ LIMITER END =====================]
         $c[================ ACTUAL CODE =====================]
         $let[num;$randomNumber[1;17]]
@@ -37,8 +25,17 @@ module.exports = {
             ]
             $else[$let[num;0$get[num]]]
         ]
-        $title[$username[$authorID] Is Angry At $user[Username;$message[0]]]
-        $image[https://purrbot.site/img/sfw/slap/gif/slap_$get[num].gif]
-        $footer[Don't worry they didn't sustain any injuries :3]
+        $ifx[
+          $if[$message[0]!=;
+            $title[$username[$authorID] Is Angry At $user[Username;$message[0]]]
+            $image[https://purrbot.site/img/sfw/slap/gif/slap_$get[num].gif]
+            $footer[$user[Username;$message[0]] Should Get Chocolates For $username[$authorID] :3]
+          ]
+          $else[
+            $title[$username[$authorID] Is Angry]
+            $image[https://purrbot.site/img/sfw/slap/gif/slap_$get[num].gif]
+            $footer[Someone Calm Them Down!]
+          ]
+        ]
     `,
 };

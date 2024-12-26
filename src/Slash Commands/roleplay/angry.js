@@ -16,9 +16,19 @@ module.exports = {
             ]
             $else[$let[num;0$get[num]]]
         ]
-        $title[$username[$authorID] Is Angry At $username[$option[user]]]
-        $image[https://purrbot.site/img/sfw/angry/gif/angry_$get[num].gif]
-        $footer[$username[$authorID] should get chocolates for $username[$option[user]] :3]
+
+        $ifx[
+          $if[$option[user]!=;
+            $title[$username[$authorID] Is Angry At $username[$option[user]]]
+            $image[https://purrbot.site/img/sfw/angry/gif/angry_$get[num].gif]
+            $footer[$username[$option[user]] should get chocolates for $username[$authorID] :3]
+          ]
+          $else[
+            $title[$username[$authorID] Is Angry]
+            $image[https://purrbot.site/img/sfw/angry/gif/angry_$get[num].gif]
+            $footer[Somebody Calm Them Down!]
+          ]
+        ]
     `,
   data: {
     name: "angry",
@@ -28,7 +38,7 @@ module.exports = {
         type: 6,
         name: "user",
         description: "the user you are angry at",
-        required: true,
+        required: false,
       },
     ],
   },
