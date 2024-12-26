@@ -4,8 +4,7 @@ module.exports = {
   description: "Get Help On A Command",
   usage: "help",
   category: "Utility",
-  source:
-    "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Utility/help.js",
+  source: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Utility/help.js",
   type: "messageCreate",
   code: `
     $start

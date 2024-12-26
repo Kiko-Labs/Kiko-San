@@ -11,8 +11,7 @@ module.exports = {
       {
         type: 3,
         name: "intensity",
-        description:
-          "the intensity of the owoifier, owo lightest, uwu medium, uvu highest",
+        description: "the intensity of the owoifier, owo lightest, uwu medium, uvu highest",
         required: true,
         choices: [
           {

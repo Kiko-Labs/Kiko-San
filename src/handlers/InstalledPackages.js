@@ -23,10 +23,7 @@ const getAllPackages = () => {
         return;
       }
 
-      if (
-        !data[0]?.dependencies ||
-        Object.keys(data[0].dependencies).length === 0
-      ) {
+      if (!data[0]?.dependencies || Object.keys(data[0].dependencies).length === 0) {
         resolve("No packages found.");
         return;
       }
@@ -51,13 +48,9 @@ const DisplayAllPackages = async () => {
   try {
     const packages = await getAllPackages();
 
-    console.log(
-      chalk.hex("#ff1493")("✨ Installed Packages ✨") + "\n" + packages,
-    );
+    console.log(chalk.hex("#ff1493")("✨ Installed Packages ✨") + "\n" + packages);
   } catch (error) {
-    console.error(
-      chalk.hex("#ff6347")("❌ Failed to fetch packages: ") + chalk.bold(error),
-    );
+    console.error(chalk.hex("#ff6347")("❌ Failed to fetch packages: ") + chalk.bold(error));
   }
 };
 

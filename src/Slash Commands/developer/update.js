@@ -10,7 +10,6 @@ module.exports = {
   `,
   data: {
     name: "update",
-    description:
-      "updates the bot and registers new commands and updates current ones",
+    description: "updates the bot and registers new commands and updates current ones",
   },
 };
