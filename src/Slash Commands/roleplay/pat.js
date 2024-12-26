@@ -1,7 +1,7 @@
 module.exports = {
   code: `
         $start
-        $onlyIf[$httpRequest[https://purrbot.site/api/list/sfw/angry/gif;GET]==200;
+        $onlyIf[$httpRequest[https://purrbot.site/api/list/sfw/pat/gif;GET]==200;
           $title[Error]
           $description[The api that kiko san uses to get these gifs has either failed or is down.
             We apologize for this inconvenience. Kindly report this to the discord server so that we can work on getting it up as soon as possible!
@@ -9,25 +9,25 @@ module.exports = {
           ]
           $footer[Sowwy senpai]
         ]
-        $let[num;$randomNumber[1;11]]
+        $let[num;$randomNumber[1;87]]
         $ifx[
             $if[$charCount[$get[num]]==1;
                 $let[num;00$get[num]]
             ]
             $else[$let[num;0$get[num]]]
         ]
-        $title[$username[$authorID] Is Angry At $username[$option[user]]]
-        $image[https://purrbot.site/img/sfw/angry/gif/angry_$get[num].gif]
-        $footer[$username[$authorID] should get chocolates for $username[$option[user]] :3]
+        $title[$username[$authorID] Is Patting $username[$option[user]]]
+        $image[https://purrbot.site/img/sfw/pat/gif/pat_$get[num].gif]
+        $footer[Just a pat, but I could give you more if you ask nicely]
     `,
   data: {
-    name: "angry",
-    description: "show that you are angry at someone using a gif",
+    name: "pat",
+    description: "show that you are patting someone using a gif",
     options: [
       {
         type: 6,
         name: "user",
-        description: "the user you are angry at",
+        description: "the user you want to pat",
         required: true,
       },
     ],
