@@ -3,7 +3,7 @@ module.exports = {
   description: "sends a gif of you cuddling someone",
   usage: "cuddle [user]",
   category: "Roleplay",
-  source: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/cuddle.js",
+  sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/cuddle.js",
   type: "messageCreate",
   code: `
         $start

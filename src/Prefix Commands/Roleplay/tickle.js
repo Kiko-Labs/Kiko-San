@@ -3,7 +3,7 @@ module.exports = {
   description: "show that you are tickling someone using a gif",
   usage: "tickle <user>",
   category: "Roleplay",
-  source: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/tickle.js",
+  sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/tickle.js",
   type: "messageCreate",
   code: `
         $start
