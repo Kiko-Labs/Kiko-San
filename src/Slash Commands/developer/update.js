@@ -1,18 +1,12 @@
 module.exports = {
   code: `
     $onlyForBotOwner[true]
-
-    $let[count;$commandCount]
     $updateCommands
     $updateApplicationCommands
-    $let[add;$sub[$commandCount;$get[count]]]
-
-    $color[ff47ff]
-    $description[Successfully update all commands.]
-
-    $addActionRow
-    $addButton[1;Added: $get[add];Success;✔️]
-    $addButton[2;Total: $commandCount;Secondary;📃]
+    $ephemeral
+    $start
+    $description[Updated The Bot!]
+    $title[Your welcome!]
   `,
   data: {
     name: "update",
