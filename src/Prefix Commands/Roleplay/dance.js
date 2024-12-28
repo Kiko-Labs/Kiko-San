@@ -1,7 +1,7 @@
 module.exports = {
   name: "dance",
   description: "shows a gif of you dancing",
-  usage: "dance",
+  usage: "",
   category: "Roleplay",
   sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/dance.js",
   type: "messageCreate",

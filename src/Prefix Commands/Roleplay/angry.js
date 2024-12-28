@@ -1,7 +1,7 @@
 module.exports = {
   name: "angry",
   description: "show that you are angry at someone using a gif",
-  usage: "angry [user]",
+  usage: "[user]",
   category: "Roleplay",
   sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/angry.js",
   type: "messageCreate",

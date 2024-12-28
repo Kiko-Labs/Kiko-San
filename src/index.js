@@ -42,7 +42,7 @@ const client = new ForgeClient({
     ...events, // Events the bot should listen for (e.g., message events, guild events)
   ],
 
-  prefixes: ["k.", "=", "$getGuildVar[prefix;$guildID;!]"],
+  prefixes: ["k!", "=", "$getGuildVar[prefix;$guildID;!]"],
 
   trackers: { invites: true }, // Enable invite tracking for the bot
 });

@@ -1,7 +1,7 @@
 module.exports = {
   name: "smile",
   description: "shows a gif of you smiling",
-  usage: "smile",
+  usage: "",
   category: "Roleplay",
   sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/smile.js",
   type: "messageCreate",

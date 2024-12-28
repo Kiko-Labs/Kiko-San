@@ -1,8 +1,8 @@
 module.exports = {
   name: "eval",
   description: "runs the given code",
-  usage: "eval <code>",
-  category: "Dev",
+  usage: "<code>",
+  category: "developer",
   sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Developer/eval.js",
   type: "messageCreate",
   code: `

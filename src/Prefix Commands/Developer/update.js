@@ -1,9 +1,10 @@
 module.exports = {
   name: "update",
   aliases: ["up"],
-  description: "updates the bot and registers new commands and updates current ones",
-  sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Developer/eval.js",
-  usage: "update",
+  description: "updates all commands",
+  usage: "",
+  category: "developer",
+  sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Developer/update.js",
   type: "messageCreate",
   code: `
       $onlyForBotOwner[false]

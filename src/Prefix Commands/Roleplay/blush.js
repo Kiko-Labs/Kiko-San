@@ -1,7 +1,7 @@
 module.exports = {
   name: "blush",
   description: "show that you blushing using a gif",
-  usage: "blush",
+  usage: "",
   category: "Roleplay",
   sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/blush.js",
   type: "messageCreate",
