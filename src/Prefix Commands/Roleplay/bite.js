@@ -39,7 +39,7 @@ module.exports = {
             ]
             $else[$let[num;0$get[num]]]
         ]
-        $title[$username[$authorID] Is Angry At $user[Username;$message[0]]]
+        $title[$username[$authorID] Is Biting $user[Username;$message[0]]]
         $image[https://purrbot.site/img/sfw/bite/gif/bite_$get[num].gif]
         $footer[I think $user[Username;$message[0]] would have preferred a hickey :3]
     `,

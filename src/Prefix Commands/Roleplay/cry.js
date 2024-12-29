@@ -21,7 +21,7 @@ module.exports = {
 
         $c[================ LIMITER END =====================]
         $c[================ ACTUAL CODE =====================]
-        $let[num;$randomNumber[1;24]]
+        $let[num;$randomNumber[1;7]]
         $ifx[
             $if[$charCount[$get[num]]==1;
                 $let[num;00$get[num]]

@@ -29,6 +29,6 @@ module.exports = {
         ]
         $title[$username[$authorID] Can't Seem To Hide Their Excitement!]
         $image[https://purrbot.site/img/sfw/dance/gif/dance_$get[num].gif]
-        $footer[$user[Username;$message[0]] is dancing :3]
+        $footer[$username[$authorID] is dancing :3]
     `,
 };

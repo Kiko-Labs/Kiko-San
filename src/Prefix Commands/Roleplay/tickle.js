@@ -27,7 +27,7 @@ module.exports = {
             ]
             $else[$let[num;0$get[num]]]
         ]
-        $title[$username[$authorID] Is Tickling $user[$message[0]]]
+        $title[$username[$authorID] Is Tickling $user[Username;$message[0]]]
         $image[https://purrbot.site/img/sfw/tickle/gif/tickle_$get[num].gif]
         $footer[tickle tickle... Now What?]
     `,
