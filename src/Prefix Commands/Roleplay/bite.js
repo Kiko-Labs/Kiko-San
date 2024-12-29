@@ -41,6 +41,6 @@ module.exports = {
         ]
         $title[$username[$authorID] Is Angry At $user[Username;$message[0]]]
         $image[https://purrbot.site/img/sfw/bite/gif/bite_$get[num].gif]
-        $footer[I think $username[$option[user]] would have preferred a hickey :3]
+        $footer[I think $user[Username;$message[0]] would have preferred a hickey :3]
     `,
 };

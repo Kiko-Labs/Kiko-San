@@ -20,7 +20,7 @@ module.exports = {
 
         $c[================ LIMITER END =====================]
         $c[================ ACTUAL CODE =====================]
-        $let[num;$randomNumber[1;17]]
+        $let[num;$randomNumber[1;11]]
         $ifx[
             $if[$charCount[$get[num]]==1;
                 $let[num;00$get[num]]
@@ -30,12 +30,12 @@ module.exports = {
         $ifx[
           $if[$message[0]!=;
             $title[$username[$authorID] Is Angry At $user[Username;$message[0]]]
-            $image[https://purrbot.site/img/sfw/slap/gif/slap_$get[num].gif]
+            $image[https://purrbot.site/img/sfw/angry/gif/angry_$get[num].gif]
             $footer[$user[Username;$message[0]] Should Get Chocolates For $username[$authorID] :3]
           ]
           $else[
             $title[$username[$authorID] Is Angry]
-            $image[https://purrbot.site/img/sfw/slap/gif/slap_$get[num].gif]
+            $image[https://purrbot.site/img/sfw/angry/gif/angry_$get[num].gif]
             $footer[Someone Calm Them Down!]
           ]
         ]

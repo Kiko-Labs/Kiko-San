@@ -28,7 +28,7 @@ module.exports = {
             $else[$let[num;0$get[num]]]
         ]
         $ifx[
-          $if[$message[1]==;
+          $if[$message[0]==;
             $title[$username[$authorID] Is Cuddling someone]
             $image[https://purrbot.site/img/sfw/cuddle/gif/cuddle_$get[num].gif]
             $footer[Cuddle mode: Activated]
