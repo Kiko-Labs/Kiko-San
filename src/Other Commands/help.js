@@ -1,14 +1,21 @@
 module.exports = {
   type: "interactionCreate",
   code: `
+
+    $c[=============================== LIMITERS ===================================]
     $onlyIf[$checkContains[$customID;helpSM]]
     $arrayLoad[ca;-;$customID]
 
     $onlyIf[$arrayAt[ca;1]==$authorID;$ephemeral
       This is not your command!
     ]
+
     $start
+    $deferUpdate
     $ifx[
+
+      $c[============================== RP ==========================================]
+
       $if[$selectMenuValues[0]==RP;
           $arrayLoad[cmds;-;$replace[$readDir[src/Prefix Commands/Roleplay;-];.js;]]
           $arrayMap[cmds;c;
