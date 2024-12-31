@@ -1,9 +1,9 @@
 module.exports = {
   name: "poke",
   description: "show that you are poking someone using a gif",
-  usage: "poke <user>",
+  usage: "<user>",
   category: "Roleplay",
-  source: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/poke.js",
+  sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/poke.js",
   type: "messageCreate",
   code: `
         $start

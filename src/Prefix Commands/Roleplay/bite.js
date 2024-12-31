@@ -1,9 +1,9 @@
 module.exports = {
   name: "bite",
   description: "bite someone using a gif",
-  usage: "bite <user>",
+  usage: "<user>",
   category: "Roleplay",
-  source: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/bite.js",
+  sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/bite.js",
   type: "messageCreate",
   code: `
         $start
@@ -39,8 +39,8 @@ module.exports = {
             ]
             $else[$let[num;0$get[num]]]
         ]
-        $title[$username[$authorID] Is Angry At $user[Username;$message[0]]]
+        $title[$username[$authorID] Is Biting $user[Username;$message[0]]]
         $image[https://purrbot.site/img/sfw/bite/gif/bite_$get[num].gif]
-        $footer[I think $username[$option[user]] would have preferred a hickey :3]
+        $footer[I think $user[Username;$message[0]] would have preferred a hickey :3]
     `,
 };

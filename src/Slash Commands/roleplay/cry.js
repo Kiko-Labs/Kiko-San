@@ -9,7 +9,7 @@ module.exports = {
           ]
           $footer[Sowwy senpai]
         ]
-        $let[num;$randomNumber[1;16]]
+        $let[num;$randomNumber[1;7]]
         $ifx[
             $if[$charCount[$get[num]]==1;
                 $let[num;00$get[num]]

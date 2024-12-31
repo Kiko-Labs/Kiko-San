@@ -1,9 +1,9 @@
 module.exports = {
   name: "tickle",
   description: "show that you are tickling someone using a gif",
-  usage: "tickle <user>",
+  usage: "<user>",
   category: "Roleplay",
-  source: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/tickle.js",
+  sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/tickle.js",
   type: "messageCreate",
   code: `
         $start
@@ -27,7 +27,7 @@ module.exports = {
             ]
             $else[$let[num;0$get[num]]]
         ]
-        $title[$username[$authorID] Is Tickling $user[$message[0]]]
+        $title[$username[$authorID] Is Tickling $user[Username;$message[0]]]
         $image[https://purrbot.site/img/sfw/tickle/gif/tickle_$get[num].gif]
         $footer[tickle tickle... Now What?]
     `,

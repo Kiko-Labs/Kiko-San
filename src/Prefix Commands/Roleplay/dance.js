@@ -1,9 +1,9 @@
 module.exports = {
   name: "dance",
   description: "shows a gif of you dancing",
-  usage: "dance",
+  usage: "",
   category: "Roleplay",
-  source: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/dance.js",
+  sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/dance.js",
   type: "messageCreate",
   code: `
         $start
@@ -29,6 +29,6 @@ module.exports = {
         ]
         $title[$username[$authorID] Can't Seem To Hide Their Excitement!]
         $image[https://purrbot.site/img/sfw/dance/gif/dance_$get[num].gif]
-        $footer[$user[Username;$message[0]] is dancing :3]
+        $footer[$username[$authorID] is dancing :3]
     `,
 };

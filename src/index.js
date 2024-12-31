@@ -24,8 +24,8 @@ const intents = require("./handlers/intents.js"); // Bot intents (permissions an
 // Dynamic paths for commands and functions based on environment
 const functionsPath = join(__dirname, "Functions");
 const slashCommandsPath = "src/Slash Commands";
-const prefixCommandsPath = "src/Prefix Commands"; //uncheck this if you plan on making prefix commands
-
+const prefixCommandsPath = "src/Prefix Commands";
+const otherCommandsPath = "src/Other Commands";
 // ========== CLIENT SETUP ==========
 // Initialize the client with necessary extensions, intents, and events
 const client = new ForgeClient({
@@ -42,7 +42,7 @@ const client = new ForgeClient({
     ...events, // Events the bot should listen for (e.g., message events, guild events)
   ],
 
-  prefixes: ["n.", ">"],
+  prefixes: ["k!", "=", "$getGuildVar[prefix;$guildID;!]"],
 
   trackers: { invites: true }, // Enable invite tracking for the bot
 });
@@ -55,6 +55,7 @@ ForgeDB.variables(variables);
 client.functions.load(functionsPath);
 client.applicationCommands.load(slashCommandsPath);
 client.commands.load(prefixCommandsPath);
+client.commands.load(otherCommandsPath);
 
 // ========== LOGIN & STARTUP ==========
 // Log in to Discord using the bot token from the environment file

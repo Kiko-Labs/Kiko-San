@@ -1,9 +1,9 @@
 module.exports = {
   name: "hug",
   description: "show that you are hugging someone using a gif",
-  usage: "hug <user>",
+  usage: "<user>",
   category: "Roleplay",
-  source: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/hug.js",
+  sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/hug.js",
   type: "messageCreate",
   code: `
         $start
