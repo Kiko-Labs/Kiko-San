@@ -13,8 +13,8 @@ module.exports = {
 
           **__Argument Types:__**
 
-          • $escapeCode[**<argument>**] means the argument is **required**.
-          • $escapeCode[**[argument\\]**] means the argument is **optional**.
+          • **<argument>** means the argument is **required**.
+          • **[argument\\]** means the argument is **optional**.
 
           **__Current Categories:__**
 
@@ -42,7 +42,6 @@ module.exports = {
         $addOption[Fun;Get All Commands That Are Fun;FUN]
         $addOption[Utility;Get All Utility Commands;UTIL]
         $addOption[Developer;These Commands Are Restricted To A Select Few Individuals;DEV]
-      ]
-      ]
+        $addOption[Economy;Gets All Economy Commands;ECONOMY;;false]
     `,
 };
