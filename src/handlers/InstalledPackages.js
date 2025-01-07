@@ -7,7 +7,7 @@ const { exec } = require("child_process");
  */
 const getAllPackages = () => {
   return new Promise((resolve, reject) => {
-    const command = "pnpm list --json";
+    const command = "npm list --json";
 
     exec(command, (error, stdout, stderr) => {
       if (error) {

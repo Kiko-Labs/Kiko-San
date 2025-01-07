@@ -4,7 +4,6 @@ module.exports = {
   description: "show that you crying using a gif",
   usage: "",
   category: "Roleplay",
-  sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/cry.js",
   type: "messageCreate",
   code: `
         $start

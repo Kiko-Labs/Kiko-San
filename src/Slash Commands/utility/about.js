@@ -9,22 +9,16 @@ module.exports = {
 
     > "A bot for the community, by the community."
 
-
     🛡️ **Features at a Glance**
     🔹 **Customizability:** Tailor commands and settings to fit your unique needs.
     🔹 **Security:** Built with user privacy and safety as top priorities.
     🔹 **Performance:** Optimized for fast responses and minimal downtime.
     🔹 **Innovation:** Continuously updated with cutting-edge features.
 
-
     💡 **Special Thanks**
     We couldn’t have made Kiko San without the contributions of these incredible individuals:
 
-    • [Stvrrr\\](https://discord.com/users/890376696585416715)
     • [Leziuwu\\](https://discord.com/users/910837428862984213)
-    • [Ayansh\\](https://discord.com/users/1004291040150298715)
-    • [Dark_lynn\\](https://discord.com/users/705306248538488947)
-
 
     🌟 **Why Choose Kiko San?**
     Whether you need moderation tools, fun commands, or seamless integrations, Kiko San is your go-to bot for **simplicity** and **power**. Join the journey today and be part of the ever-growing Kiko San community!

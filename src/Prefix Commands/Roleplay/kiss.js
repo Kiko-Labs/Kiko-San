@@ -3,7 +3,6 @@ module.exports = {
   description: "show that you are kissing someone using a gif",
   usage: "<user>",
   category: "Roleplay",
-  sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/kiss.js",
   type: "messageCreate",
   code: `
         $start

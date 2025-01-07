@@ -2,11 +2,11 @@
   "name": "kikosan",
   "version": "1.1.0",
   "description": "A starting template for forgescript",
-  "main": ".src/index.js",
+  "main": "src/index.js",
   "type": "commonjs",
   "scripts": {
-    "up": "pnpm install && pnpm update",
-    "start": "clear && pnpm run lint && pnpm run format && clear && node ./src/index.js",
+    "up": "npm install && npm update",
+    "start": "clear && npm run lint && npm run format && clear && node ./src/index.js",
     "lint": "eslint --fix '**/*.{js,mjs,cjs,ts}'",
     "format": "prettier --write '**/*.{js,mjs,cjs,ts,json,css,html}'",
     "lint-and-format": "pnpm run lint && pnpm run format",
@@ -33,6 +33,7 @@
     "@tryforge/forgescript": "github:tryforge/forgescript#dev",
     "chalk": "^4.1.2",
     "figlet": "^1.8.0",
+    "forge.quirks": "github:LynnuxDev/forge.quirks",
     "owoify-js": "^2.0.0",
     "path": "^0.12.7",
     "sqlite3": "^5.1.7"

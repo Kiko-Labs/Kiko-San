@@ -4,7 +4,6 @@ module.exports = {
   description: "get the bots help menu",
   usage: "[category]",
   category: "Utility",
-  sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Utility/help.js",
   type: "messageCreate",
   code: `
         $start
@@ -30,6 +29,8 @@ module.exports = {
           **__Prefix Commands:__** $commandCount
 
           Need help with something specific? Select a category below to get a list of related commands!
+
+          [Website\\](https://kikosan.zack911.xyz)
         ]
 
         $thumbnail[$userAvatar[$botID]]

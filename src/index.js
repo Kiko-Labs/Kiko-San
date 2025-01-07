@@ -8,6 +8,7 @@ dotenv.config(); // Ensure this is called before anything that depends on the en
 const { ForgeCanvas } = require("@tryforge/forge.canvas"); // Canvas extension for drawing and images
 const { ForgeClient, LogPriority } = require("@tryforge/forgescript"); // ForgeClient for Discord bot logic
 const { ForgeDB } = require("@tryforge/forge.db"); // Database management extension
+const { ForgeQuirks } = require("forge.quirks"); // Adds a few quirky functions to forgescript
 const chalk = require("chalk"); // For colorful console outputs
 const figlet = require("figlet"); // For generating fancy ASCII art text
 const { join } = require("path"); // For handling file paths
@@ -32,6 +33,7 @@ const client = new ForgeClient({
   extensions: [
     new ForgeDB(), // Database extension for handling data
     new ForgeCanvas(), // Canvas extension for graphic handling
+    new ForgeQuirks(), // A Few Extra Functions For ForgeScript
   ],
 
   intents: [

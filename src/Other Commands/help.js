@@ -22,9 +22,8 @@ module.exports = {
           $let[n;$commandInfo[messageCreate;$env[c];name]]
           $let[u;$commandInfo[messageCreate;$env[c];usage]]
           $let[d;$commandInfo[messageCreate;$env[c];description]]
-          $let[sc;$commandInfo[messageCreate;$env[c];sourcecode]]
-          $return[**Name:** k!$get[n] $get[u]
-              $get[d]];mappedcmds]
+          $return[**Name:** k![$get[n]\\](https://kikosan.gitbook.io/docs/commands/roleplay/$get[n]) $get[u]
+              $smallText[$get[d]]];mappedcmds]
           $!editMessage[$channelID;$messageID;
           $title[Roleplay Commands]
           $thumbnail[$userAvatar[$botID]]
@@ -51,8 +50,7 @@ module.exports = {
         $let[n;$commandInfo[messageCreate;$env[c];name]]
         $let[u;$commandInfo[messageCreate;$env[c];usage]]
         $let[d;$commandInfo[messageCreate;$env[c];description]]
-        $let[sc;$commandInfo[messageCreate;$env[c];sourcecode]]
-        $return[**Name:** k!$get[n] $get[u]
+        $return[**Name:** k![$get[n]\\](https://kikosan.gitbook.io/docs/commands/utility/$get[n]) $get[u]
             $get[d]];mappedcmds]
         $!editMessage[$channelID;$messageID;
         $title[Utility Commands]
@@ -80,8 +78,7 @@ module.exports = {
         $let[n;$commandInfo[messageCreate;$env[c];name]]
         $let[u;$commandInfo[messageCreate;$env[c];usage]]
         $let[d;$commandInfo[messageCreate;$env[c];description]]
-        $let[sc;$commandInfo[messageCreate;$env[c];sourcecode]]
-        $return[**Name:** k!$get[n] $get[u]
+        $return[**Name:** k![$get[n]\\](https://kikosan.gitbook.io/docs/commands/fun/$get[n]) $get[u]
             $get[d]];mappedcmds]
         $!editMessage[$channelID;$messageID;
         $title[Fun Commands]
@@ -109,8 +106,7 @@ module.exports = {
         $let[n;$commandInfo[messageCreate;$env[c];name]]
         $let[u;$commandInfo[messageCreate;$env[c];usage]]
         $let[d;$commandInfo[messageCreate;$env[c];description]]
-        $let[sc;$commandInfo[messageCreate;$env[c];sourcecode]]
-        $return[**Name:** k!$get[n] $get[u]
+        $return[**Name:** k![$get[n]\\](https://kikosan.gitbook.io/docs/commands/developer/$get[n]) $get[u]
             $get[d]];mappedcmds]
         $!editMessage[$channelID;$messageID;
         $title[Developer Commands]
@@ -138,8 +134,7 @@ module.exports = {
         $let[n;$commandInfo[messageCreate;$env[c];name]]
         $let[u;$commandInfo[messageCreate;$env[c];usage]]
         $let[d;$commandInfo[messageCreate;$env[c];description]]
-        $let[sc;$commandInfo[messageCreate;$env[c];sourcecode]]
-        $return[**Name:** k!$get[n] $get[u]
+        $return[**Name:** k![$get[n]\\](https://kikosan.gitbook.io/docs/commands/economy/$get[n]) $get[u]
             $get[d]];mappedcmds]
         $!editMessage[$channelID;$messageID;
         $title[Economy Commands]
@@ -186,6 +181,8 @@ module.exports = {
             **__Prefix Commands:__** $commandCount
 
             Need help with something specific? Select a category below to get a list of related commands!
+
+            [Website\\](https://kikosan.zack911.xyz)
           ]
 
           $thumbnail[$userAvatar[$botID]]

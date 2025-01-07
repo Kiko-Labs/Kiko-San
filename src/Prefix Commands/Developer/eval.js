@@ -3,7 +3,6 @@ module.exports = {
   description: "runs the given code",
   usage: "<code>",
   category: "developer",
-  sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Developer/eval.js",
   type: "messageCreate",
   code: `
     $onlyForBotOwner[false]

@@ -4,7 +4,6 @@ module.exports = {
   description: "Get The Information About The Bot",
   usage: "about",
   category: "Utility",
-  sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Utility/about.js",
   type: "messageCreate",
   code: `
     $start
@@ -27,11 +26,7 @@ module.exports = {
       💡 **Special Thanks**
       We couldn’t have made Kiko San without the contributions of these incredible individuals:
 
-      • [Stvrrr\\](https://discord.com/users/890376696585416715)
       • [Leziuwu\\](https://discord.com/users/910837428862984213)
-      • [Ayansh\\](https://discord.com/users/1004291040150298715)
-      • [Dark_lynn\\](https://discord.com/users/705306248538488947)
-
 
       🌟 **Why Choose Kiko San?**
       Whether you need moderation tools, fun commands, or seamless integrations, Kiko San is your go-to bot for **simplicity** and **power**. Join the journey today and be part of the ever-growing Kiko San community!

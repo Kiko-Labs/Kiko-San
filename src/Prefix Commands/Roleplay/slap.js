@@ -3,7 +3,6 @@ module.exports = {
   description: "Returns a gif of anime people slapping each other",
   usage: "<user>",
   category: "Roleplay",
-  sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/slap.js",
   type: "messageCreate",
   code: `
     $start

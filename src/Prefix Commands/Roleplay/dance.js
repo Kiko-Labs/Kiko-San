@@ -3,7 +3,6 @@ module.exports = {
   description: "shows a gif of you dancing",
   usage: "",
   category: "Roleplay",
-  sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Roleplay/dance.js",
   type: "messageCreate",
   code: `
         $start

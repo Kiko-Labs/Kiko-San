@@ -4,7 +4,6 @@ module.exports = {
   description: "owoify a message",
   usage: "<owo/uwu/uvu> <text>",
   category: "Fun",
-  sourcecode: "https://github.com/Kiko-Labs/Kiko-San/blob/stable/src/Prefix%20Commands/Fun/owoify.js",
   type: "messageCreate",
   code: `
     $c[================= LIMITER START ===================]
