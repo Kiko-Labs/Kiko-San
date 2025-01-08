@@ -7,6 +7,9 @@
 **Kiko San** is an open-source, multipurpose Discord bot designed with both aesthetics and functionality in mind. Built using **Forgescript**, Kiko San is fully customizable and supports both **prefix commands** and **slash commands**, offering flexibility for users and developers alike.
 
 ---
+<div align="center">
+  <a href="https://wakatime.com/badge/user/50d24838-6599-44fc-9e61-1794cf26b2b9/project/ab25ca8e-146a-44fe-9cc1-2912622e98c0"><img src="https://wakatime.com/badge/user/50d24838-6599-44fc-9e61-1794cf26b2b9/project/ab25ca8e-146a-44fe-9cc1-2912622e98c0.svg" alt="wakatime"></a>
+</div>
 
 ## Features
 
