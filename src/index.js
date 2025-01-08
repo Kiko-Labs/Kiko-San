@@ -26,7 +26,7 @@ const intents = require("./handlers/intents.js"); // Bot intents (permissions an
 const functionsPath = join(__dirname, "Functions");
 const slashCommandsPath = "src/Slash Commands";
 const prefixCommandsPath = "src/Prefix Commands";
-const otherCommandsPath = "src/Other Commands";
+const otherCommandsPath = "src/Event Commands";
 // ========== CLIENT SETUP ==========
 // Initialize the client with necessary extensions, intents, and events
 const client = new ForgeClient({

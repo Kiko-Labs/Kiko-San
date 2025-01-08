@@ -1,8 +1,8 @@
 module.exports = {
-    code: `
+  code: `
       $start
       $title[Help Has Arrived!]
-      $description[Hello, I am Kiko San, your all-in-one server assistant!
+      $description[Hello, I am $bn, your all-in-one server assistant!
 
         **__Argument Types:__**
 
@@ -39,8 +39,8 @@ module.exports = {
       $addOption[Developer;These Commands Are Restricted To A Select Few Individuals;DEV]
       $addOption[Economy;Gets All Economy Commands;ECONOMY;;false]
     `,
-    data: {
-      name: "help",
-      description: "get all the commands!",
-    },
+  data: {
+    name: "help",
+    description: "get all the commands!",
+  },
 };
