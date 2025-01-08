@@ -8,7 +8,7 @@ module.exports = {
   code: `
         $start
         $title[Help Has Arrived!]
-        $description[Hello, I am Kiko San, your all-in-one server assistant!
+        $description[Hello, I am $bn, your all-in-one server assistant!
 
           **__Argument Types:__**
 
