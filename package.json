@@ -16,12 +16,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zack-911/Atomic.git"
+    "url": "git+https://github.com/Kiko-Labs/Kiko-San.git"
   },
   "keywords": [
     "discord",
     "bot",
-    "opensource"
+    "opensource",
+    "forgescript",
+    "bdfd",
+    "premade",
+    "balls"
   ],
   "author": "Zack-911",
   "license": "BSD 4",
