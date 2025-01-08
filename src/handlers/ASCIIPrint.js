@@ -3,7 +3,7 @@ const figlet = require("figlet");
 
 const displayAsciiArt = () => {
   // Log that the bot is running
-  console.log(chalk.hex("#ff80ff")("✨ Kiko San is Awakening ✨")); // Soft purple/pinkish text for a mystical vibe
+  console.log(chalk.hex("#ff80ff")("✨ $bn is Awakening ✨")); // Soft purple/pinkish text for a mystical vibe
   console.log();
   figlet.text("Kiko San", { font: "Poison" }, (err, data) => {
     // Try using the "Poison" font for anime vibe

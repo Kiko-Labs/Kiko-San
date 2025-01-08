@@ -1,7 +1,9 @@
 // src/handlers/database.js
 
 const variables = {
-  //==========ROLEPLAY==============
+  //========== ECONOMY ==============
+  cash: "0",
+  bank: "0",
 };
 
 module.exports = variables; // Export the variables object
