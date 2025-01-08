@@ -1,20 +1,23 @@
 module.exports = {
-  code: `$c[---> Limiter]
-  $onlyForBotOwner[true]
-  $c[--->Execute the command]
-  $eval[$option[code]]
-  $c[--->Just a way to tell that the command was executed successfully in case there are no response]
+  /*---> Code */
+  code: `
+  $c[---> Limiters]
+  $onlyForBotOwner[true]` +
+  /*---> Execute the command*/ `
+  $eval[$option[code]]` +
+  /*--->Just a way to tell that the command was executed successfully in case there are no response*/ ` 
   Ping: \`$pingMS\` | Uptime: <t:$round[$math[$math[$getTimestamp-$uptime]/1000];0]:R>
   `,
+  //---> Data of the slash command
   data: {
-    name: "eval", // name of the command
-    description: "runs the given code", // description of the command
-    options: [ // options
+    name: "eval", //---> Name
+    description: "runs the given code", //---> Description of the command
+    options: [ //---> Options
       {
-        type: 3, // text input type
-        name: "code", // name of the option
-        description: "the code to run", // the description of the option
-        required: true // is required?
+        type: 3, //---> Input type
+        name: "code", //---> Name of the option
+        description: "the code to run", //---> The description of the option
+        required: true //---> Is required?
       },
     ],
   },
