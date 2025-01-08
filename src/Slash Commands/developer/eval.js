@@ -10,14 +10,14 @@ module.exports = {
   `,
   //---> Data of the slash command
   data: {
-    name: "eval", //---> Name
-    description: "runs the given code", //---> Description of the command
-    options: [ //---> Options
+    name: "eval",
+    description: "runs the given code",
+    options: [
       {
-        type: 3, //---> Input type
-        name: "code", //---> Name of the option
-        description: "the code to run", //---> The description of the option
-        required: true //---> Is required?
+        type: 3,
+        name: "code",
+        description: "the code to run",
+        required: true
       },
     ],
   },
