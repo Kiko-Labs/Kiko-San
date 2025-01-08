@@ -5,7 +5,7 @@ module.exports = [
     code: `
     $onlyIf[$or[$env[type]==ID;$env[type]==Username];
       $start
-      
+
       $description[$env[type] in not a valid type.
         Instead specify what you want.
         ID or Username
