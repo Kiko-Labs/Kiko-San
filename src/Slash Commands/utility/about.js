@@ -1,6 +1,8 @@
 module.exports = {
-  code: `
-  $start
+  //---> Main code
+  code: `$c[---> Custom functions]
+  $start` +
+  /*---> Main embed*/ `
   $title[About $bn]
   $thumbnail[$userAvatar[$botID]]
   $description[✨ **$bn**
@@ -29,12 +31,14 @@ module.exports = {
     Thank you for believing in $bn and helping it grow! 💖
   ]
   $image[$userBanner[$botID]]
-  $footer[Made with ❤️ by $userDisplayName[$botOwnerID] with ForgeScript;$userAvatar[$botOwnerID]]
+  $footer[Made with ❤️ by $userDisplayName[$botOwnerID] with ForgeScript;$userAvatar[$botOwnerID]]` +
+  /*---> Buttons*/ `
   $addActionRow
   $addButton[https://github.com/Kiko-Labs/Kiko-San;Source Code;Link]
   $addButton[https://github.com/Kiko-Labs/Kiko-San/blob/stable/license.md;License;Link]
   $addButton[https://github.com/Kiko-Labs/Kiko-San/blob/stable/BSD%204-%20Clause%20Symplified.md;Simplified License;Link]
     `,
+//---> Slash command data
   data: {
     name: "about",
     description: "get the bots info",
