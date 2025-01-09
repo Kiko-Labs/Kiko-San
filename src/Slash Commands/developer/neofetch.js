@@ -1,9 +1,12 @@
+//---> Loading neofetch
 const { getNeofetch } = require("../../native/neofetch");
-
+//---> Main code
 module.exports = {
-  code: `
-    $onlyForBotOwner[true]
-    $start
+  code: `$c[--->Limiters]
+    $onlyForBotOwner[true]` +
+    /*---> Custom functions */ `
+    $start` +
+    /*---> Main embed output*/ `
     $title[System Specifications]
     $description[Here are your system stats senpai. uwu
         \`\`\`yml
@@ -11,6 +14,7 @@ module.exports = {
         \`\`\`]
     $footer[I like men]
     `,
+  //---> Data of the slash command
   data: {
     name: "neofetch",
     description: "get system stats",
