@@ -1,0 +1,14 @@
+2025-01-09T16:13:54.113Z info: --- Starting SFTP Synchronization ---
+2025-01-09T16:13:54.115Z info: Connecting to SFTP server...
+2025-01-09T16:14:19.135Z error: ❌ SFTP synchronization failed.
+2025-01-09T16:14:19.136Z info: 📢 Notification: Synchronization failed!
+2025-01-09T16:14:19.137Z info: 🔒 SFTP connection closed.
+2025-01-09T16:14:19.137Z info: --- SFTP Synchronization Complete ---
+2025-01-09T16:15:22.091Z info: --- Starting SFTP Synchronization ---
+2025-01-09T16:15:22.092Z info: Connecting to SFTP server...
+2025-01-09T16:15:26.070Z info: ✅ Successfully connected to node2.artonhosting.cloud:2022
+2025-01-09T16:15:26.071Z info: 🔍 Scanning for files to upload...
+2025-01-09T16:15:26.072Z error: ❌ SFTP synchronization failed.
+2025-01-09T16:15:26.072Z info: 📢 Notification: Synchronization failed!
+2025-01-09T16:15:26.285Z info: 🔒 SFTP connection closed.
+2025-01-09T16:15:26.285Z info: --- SFTP Synchronization Complete ---

@@ -1,14 +1,11 @@
 module.exports = {
   //---> Main code
   code: `$c[---> Limiters]
-    $onlyForBotOwner[true]` +
-    /*---> The code behind the scene */ `
+    $onlyForBotOwner[true]
     $updateCommands
     $updateApplicationCommands
-    $ephemeral`
-    /*---> Custom functions*/ `
-    $start` +
-    /*---> Output embed */ `
+    $ephemeral
+    $start
     $description[Updated The Bot!]
     $title[Your welcome!]
   `,
@@ -17,4 +14,4 @@ module.exports = {
     name: "update",
     description: "updates the bot and registers new commands and updates current ones",
   },
-}
+};

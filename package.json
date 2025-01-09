@@ -12,7 +12,7 @@
     "lint": "eslint --fix '**/*.{js,mjs,cjs,ts}'",
     "format": "prettier --write '**/*.{js,mjs,cjs,ts,json,css,html}'",
     "lint-and-format": "pnpm run lint && pnpm run format",
-    "stable-release": "git switch stable && git merge dev --no-ff -m 'Pulled All Changes From Dev Branch. See Detailed Update List In Discord Server' && git push && git switch dev"
+    "stable-release": "git switch stable && git merge dev --no-ff -m 'Pulled All Changes From Dev Branch. See Detailed Update List In Discord Server'"
   },
   "repository": {
     "type": "git",
@@ -37,13 +37,17 @@
     "@tryforge/forge.canvas": "^1.1.1",
     "@tryforge/forge.db": "^2.0.7",
     "@tryforge/forgescript": "github:tryforge/forgescript#dev",
+    "async-retry": "^1.3.3",
     "balls": "^1.0.1",
     "chalk": "^4.1.2",
     "figlet": "^1.8.0",
     "forge.quirks": "github:LynnuxDev/forge.quirks",
     "owoify-js": "^2.0.0",
     "path": "^0.12.7",
-    "sqlite3": "^5.1.7"
+    "progress": "^2.0.3",
+    "sqlite3": "^5.1.7",
+    "ssh2-sftp-client": "^11.0.0",
+    "winston": "^3.17.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

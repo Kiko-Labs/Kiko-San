@@ -19,7 +19,10 @@ module.exports = {
       **🛠️ Technical Info**
       🔹 **Node.js Version:** $nodeVersion
       🔹 **Ping:** $round[$ping]ms
+      🔹 **RoundTrip Ping:** $roundTripPing
       🔹 **Bot Uptime:** $parseMs[$uptime]
+      🔹 **Bot Version:** $projectVersion
+      🔹 **Shard Count:** $shardCount
     ]
   `,
   data: {

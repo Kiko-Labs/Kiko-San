@@ -5,3 +5,4 @@ forge.db
 package-lock.json
 .idx
 pnpm-lock.yaml
+Bot-Stable-Release.js
