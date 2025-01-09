@@ -1,7 +1,7 @@
 module.exports = {
   name: "stats",
   description: "retrieve the bots stats",
-  usage: "stats",
+  usage: "",
   category: "utility",
   type: "messageCreate",
   code: `

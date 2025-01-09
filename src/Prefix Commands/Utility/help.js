@@ -2,7 +2,7 @@ module.exports = {
   name: "help",
   aliases: ["sos"],
   description: "get the bots help menu",
-  usage: "[category]",
+  usage: "",
   category: "Utility",
   type: "messageCreate",
   code: `

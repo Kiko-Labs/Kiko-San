@@ -2,7 +2,7 @@ module.exports = {
   name: "about",
   aliases: ["info", "bot", "credits"],
   description: "Get The Information About The Bot",
-  usage: "about",
+  usage: "",
   category: "Utility",
   type: "messageCreate",
   code: `
