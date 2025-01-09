@@ -1,7 +1,7 @@
 module.exports = {
   name: "ping",
   description: "get the bots ping and uptime",
-  usage: "ping",
+  usage: "",
   category: "Fun",
   type: "messageCreate",
   code: `

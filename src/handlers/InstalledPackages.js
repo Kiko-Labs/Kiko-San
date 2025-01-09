@@ -1,10 +1,6 @@
 const chalk = require("chalk");
 const { exec } = require("child_process");
 
-/**
- * Fetch all installed packages.
- * @returns {Promise<string>} - A string with formatted package names and versions.
- */
 const getAllPackages = () => {
   return new Promise((resolve, reject) => {
     const command = "npm list --json";
@@ -41,9 +37,6 @@ const getAllPackages = () => {
   });
 };
 
-/**
- * Display all installed packages and their versions.
- */
 const DisplayAllPackages = async () => {
   try {
     const packages = await getAllPackages();

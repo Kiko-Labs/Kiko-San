@@ -1,9 +1,5 @@
 const { execSync } = require("child_process");
 
-/**
- * Gets the neofetch information used for a `!neofetch` command (dev only).
- * @returns {string} Neofetch information.
- */
 function getNeofetch() {
   try {
     const output = execSync("neofetch --off --stdout --noImage", {

@@ -1,5 +1,6 @@
 module.exports = {
-  code: `
+  //---> Main code
+  code: `$c[---> Limiters]
     $onlyForBotOwner[true]
     $updateCommands
     $updateApplicationCommands
@@ -8,6 +9,7 @@ module.exports = {
     $description[Updated The Bot!]
     $title[Your welcome!]
   `,
+  //---> Data of the slash command
   data: {
     name: "update",
     description: "updates the bot and registers new commands and updates current ones",

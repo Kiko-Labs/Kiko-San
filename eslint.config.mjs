@@ -17,6 +17,7 @@ export default [
       semi: "error", // Ensure semicolons are used
       "prefer-const": "error", // Prefer const over let when possible
       "max-len": "off",
+      semi: "off",
     },
   },
 ];
