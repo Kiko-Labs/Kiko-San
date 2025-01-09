@@ -18,5 +18,5 @@ module.exports = {
   data: {
     name: "neofetch",
     description: "get system stats",
-  },
-};
+  }
+}
