@@ -1,9 +1,12 @@
 module.exports = {
-  code: `
+  //---> Main code
+  code: `$c[---> Variables]
     $let[level;$option[intensity]]
-    $let[message;$option[text]]
+    $let[message;$option[text]]` +
+    /*---> Main code*/ `
     $djsEval[require('owoify-js').default(ctx.getKeyword("message"), ctx.getKeyword("level"))]
   `,
+  //---> Data of the slash commands 
   data: {
     name: "owoify",
     description: "owoifys a message",

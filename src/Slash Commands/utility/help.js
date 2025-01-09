@@ -1,6 +1,8 @@
 module.exports = {
-  code: `
-      $start
+  //---> Main code
+  code: `$c[---> Custom functions]
+      $start` +
+    /*---> Main embed */ `
       $title[Help Has Arrived!]
       $description[Hello, I am $bn, your all-in-one server assistant!
 
@@ -29,7 +31,8 @@ module.exports = {
 
       $thumbnail[$userAvatar[$botID]]
       $image[$userBanner[$botID]]
-      $footer[Made with ❤️ by $userDisplayName[$botOwnerID] with ForgeScript;$userAvatar[$botOwnerID]]
+      $footer[Made with ❤️ by $userDisplayName[$botOwnerID] with ForgeScript;$userAvatar[$botOwnerID]]` +
+    /*---> Select menu*/ `
       $addActionRow
       $addStringSelectMenu[helpSM-$authorID]
       $addOption[Home;Return To The Help Menu Home;HOME;;true]
@@ -39,6 +42,7 @@ module.exports = {
       $addOption[Developer;These Commands Are Restricted To A Select Few Individuals;DEV]
       $addOption[Economy;Gets All Economy Commands;ECONOMY;;false]
     `,
+  /* Slash command data */
   data: {
     name: "help",
     description: "get all the commands!",
