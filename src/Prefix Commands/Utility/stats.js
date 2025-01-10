@@ -6,7 +6,6 @@ module.exports = {
   type: "messageCreate",
   code: `
     $start
-    $author[$username[$authorID];$userAvatar]
     $title[📊 System Information: $bn]
     $description[
       **💾 RAM Usage**
